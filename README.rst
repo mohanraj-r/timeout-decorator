@@ -1,6 +1,5 @@
 
 
-
 Installation
 ------------
 From source code: ::
@@ -10,6 +9,11 @@ From source code: ::
 From pypi: ::
 
     pip install timeout-decorator
+    
+    
+Doesn't work on Windows
+-----------------------
+Due to a signal (`SIGALRM`) not being available in the `signal` module in Windows, this won't work in Windows.
 
 Usage
 -----
